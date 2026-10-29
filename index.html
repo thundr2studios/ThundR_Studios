@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#08090d" />
+  <meta name="description" content="ThundR_Studios – Games, Websites, Minecraft Mods, Minecraft Server und kreative Projekte von ThundR_G4ming." />
+  <meta property="og:title" content="ThundR_Studios — Create Beyond Limits" />
+  <meta property="og:description" content="Games. Websites. Mods. Server. Entdecke die Projekte hinter ThundR_Studios." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/logo.png" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>try{const mode=localStorage.getItem('thundr-studios-theme-v6');if(mode==='light'||mode==='dark')document.documentElement.dataset.theme=mode}catch(e){}</script>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="themes.css" />
+  <link rel="stylesheet" href="project-pages.css" />
+  <script src="data.js" defer></script>
+  <script src="i18n.js" defer></script>
+  <script src="script.js" defer></script>
+  <title>ThundR_Studios — Create Beyond Limits</title>
+</head>
+<body>
+  <a class="skip-link" href="#app">Zum Inhalt springen</a>
+  <div class="ambient" aria-hidden="true"><div class="ambient-grid"></div><div class="ambient-glow"></div></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner container">
+      <a class="brand" href="#/home" aria-label="ThundR Studios — Startseite">
+        <span class="brand-image"><img src="assets/logo.png" alt="" /></span>
+        <span class="brand-text">THUNDR<span>_</span>STUDIOS<small>BUILD THE UNEXPECTED.</small></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Hauptnavigation">
+        <a data-route="home" href="#/home">Willkommen</a>
+        <a data-route="projects" href="#/projects">Projekte</a>
+        <a data-route="games" href="#/games">My Games</a>
+        <a data-route="websites" href="#/websites">My Sites</a>
+        <a data-route="minecraft-mods" href="#/minecraft-mods">Minecraft Mods</a>
+      <a data-route="minecraft-server" href="#/minecraft-server">Minecraft Server</a>
+        <a data-route="about" href="#/about">Über mich</a>
+      </nav>
+      <div class="header-actions">
+        <div class="display-preferences" aria-label="Sprache und Design" role="group">
+          <div class="language-switch" role="group" aria-label="Sprache auswählen">
+            <button type="button" class="language-option" data-set-lang="de" aria-label="Deutsch" aria-pressed="true">DE</button>
+            <button type="button" class="language-option" data-set-lang="en" aria-label="English" aria-pressed="false">EN</button>
+          </div>
+          <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Hellmodus aktivieren" title="Hellmodus aktivieren" aria-pressed="false"><span class="theme-icon" aria-hidden="true">☀</span></button>
+        </div>
+        <a href="#/socials" class="header-social" data-route="socials" aria-label="Social Media">Socials <span aria-hidden="true">↗</span></a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Menü öffnen" aria-controls="mobile-nav" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile Navigation" hidden>
+      <a data-route="home" href="#/home">Willkommen</a>
+      <a data-route="projects" href="#/projects">Alle Projekte</a>
+      <a data-route="games" href="#/games">My Games</a>
+      <a data-route="websites" href="#/websites">My Sites</a>
+      <a data-route="minecraft-mods" href="#/minecraft-mods">Minecraft Mods</a>
+      <a data-route="minecraft-server" href="#/minecraft-server">Minecraft Server</a>
+      <a data-route="about" href="#/about">Über mich</a>
+      <a data-route="socials" href="#/socials">Socials / Community</a>
+    </nav>
+  </header>
+
+  <main id="app" tabindex="-1"><div class="boot-loader"><span class="loader-symbol">ϟ</span> INITIALIZING STUDIO</div></main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div><div class="footer-brand">THUNDR<span>_</span>STUDIOS<span class="footer-star">✳</span></div><p>Made with code, creativity & a little thunder.</p></div>
+      <div class="footer-links"><a href="#/projects">Projekte</a><a href="#/about">Über mich</a><a href="#/socials">Socials</a><a id="footer-top" href="#/home">Nach oben ↑</a></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="footer-year"></span> ThundR_Studios</span><span>INDEPENDENT CREATOR STUDIO <span class="pulse-dot"></span></span></div>
+  </footer>
+  <dialog id="project-dialog" class="project-dialog" aria-labelledby="dialog-title"><div id="dialog-content"></div><button class="dialog-close" id="dialog-close" aria-label="Schließen">✕</button></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
