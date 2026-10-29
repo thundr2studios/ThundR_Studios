@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="de" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070c1a">
+  <meta name="description" content="Dein Projekt – ein Minecraft Create und Physics Community-Serverprojekt von ThundR_Studios.">
+  <meta property="og:title" content="Dein Projekt · Explore the Impossible">
+  <meta property="og:image" content="../../assets/logo.png">
+  <link rel="icon" href="../../assets/logo.png" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>try{const v=localStorage.getItem('thundr-studios-theme-v6');if(v==='light'||v==='dark')document.documentElement.dataset.theme=v;}catch(_){}</script>
+  <link rel="stylesheet" href="project_style.css">
+  <script src="project_data.js" defer></script>
+  <script src="project_script.js" defer></script>
+  <title>Dein Projekt | ThundR_Studios</title>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-ui="skip">Zum Inhalt springen</a>
+  <canvas id="starfield" aria-hidden="true"></canvas>
+  <div class="space-grid" aria-hidden="true"></div>
+  <div class="nebula nebula-one" aria-hidden="true"></div>
+  <div class="nebula nebula-two" aria-hidden="true"></div>
+
+  <header class="site-header" id="header">
+    <div class="container header-layout">
+      <a class="brand" href="#home" aria-label="QuasarPhysics Startseite">
+        <span class="brand-mark"><img src="../../assets/logo.png" alt=""></span>
+        <span class="brand-copy"><strong>DEIN<span>PROJEKT</span></strong><small>CREATE: THE NEXT FRONTIER</small></span>
+      </a>
+      <nav id="main-nav" class="main-nav" aria-label="Navigation"></nav>
+      <div class="header-tools">
+        <div class="locale-switch" role="group" aria-label="Language"><button data-lang="de" type="button">DE</button><button data-lang="en" type="button">EN</button></div>
+        <button id="theme-toggle" type="button" class="round-button" aria-label="Light Mode" title="Light Mode">☼</button>
+        <a href="../../index.html#/minecraft-server" class="studio-button"><span data-ui="studio">Studio</span><span aria-hidden="true">↗</span></a>
+        <button type="button" id="menu-toggle" class="round-button menu-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Menü öffnen">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container" id="home" aria-labelledby="hero-title">
+      <div class="hero-text">
+        <div class="hero-eyebrow"><span class="signal-dot"></span><span data-ui="eyebrow">CREATE MOD · PHYSICS · MULTIPLAYER</span><span class="eyebrow-trace"></span></div>
+        <div class="hero-overline" data-ui="edition">A NEW UNIVERSE OF ENGINEERING</div>
+        <h1 id="hero-title"><span data-ui="hero1">BUILD THE</span><span class="headline-gradient" data-ui="hero2">IMPOSSIBLE.</span></h1>
+        <p class="hero-intro" data-ui="heroText">Dein Space für Create, Physik, kreative Maschinen und große Ideen. Entdecke das QuasarPhysics-Projekt.</p>
+        <div class="hero-buttons">
+          <a class="button button-primary" href="#features"><span data-ui="explore">Universum erkunden</span><span class="arrow-icon">↗</span></a>
+          <a class="button button-outline" href="#connect"><span data-ui="connect">Serveradresse</span><span>↘</span></a>
+        </div>
+        <div class="hero-footer"><span class="hero-divider"></span><span class="mini-cross">✳</span> <span data-ui="by">A THUNDR_STUDIOS PROJECT</span><span class="hero-terminal">CORE_SYS / ONLINE<span class="cursor-block">_</span></span></div>
+      </div>
+      <div class="hero-visual" aria-label="QuasarPhysics Logo in einer animierten Weltraum-Orbitalszene">
+        <div class="cosmos-halo"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
+        <div class="orbit-satellite satellite-one"></div><div class="orbit-satellite satellite-two"></div>
+        <div class="logo-glow"></div><img src="../../assets/logo.png" class="hero-logo" alt="Dein Projekt Projektlogo" width="800" height="800">
+        <div class="orbit-label label-top"><span>✳</span> QUASAR / 001</div>
+        <div class="orbit-label label-bottom">CREATE × PHYSICS <span>↗</span></div>
+      </div>
+    </section>
+
+    <div class="signal-band" aria-label="Projekt-Informationen"><div class="container signal-band-inner" id="highlights"></div></div>
+    <div id="sections" class="sections" aria-live="off"></div>
+  </main>
+
+  <footer class="footer container">
+    <div class="footer-main"><div class="footer-logo"><img src="../../assets/logo.png" alt=""><div><strong>CREATE: DEIN PROJEKT</strong><span>AN INDEPENDENT THUNDR_STUDIOS PROJECT</span></div></div><a href="#home" class="footer-up" data-ui="top">Zurück nach oben ↑</a></div>
+    <div class="footer-bottom"><span>© <span id="year"></span> THUNDR_STUDIOS</span><span data-ui="disclaimer">Unabhängiges Minecraft-Fanprojekt. Nicht mit Mojang oder Microsoft verbunden.</span></div>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
